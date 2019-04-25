@@ -1,36 +1,82 @@
-<div>
+<div class="flex-container">
+
+
+  <div  style="margin-top: 70px"  fxLayout="column"  fxLayout.xs="column"   fxLayoutGap.xs="0" fxLayoutGap="100px" >
+        <div  fxFlex  fxLayoutAlign="center" fxFlexOffset.xs="0"><h4>Add New datasource</h4></div>
+        <div  fxFlex  fxLayoutAlign="center" fxFlexOffset.xs="0"><h5>You can new datasource to your datapod <br> This data will be stored on your machine <br> encrypted at rest</h5></div>
 
     
-    <div  fxLayoutGap="2%" fxLayout="row wrap" fxLayoutAlign="center" fxFlexFill>
-        <h2>Welcome to Privacy centric Datapod</h2>
-    </div>
-    <div  fxLayoutGap="2%" fxLayout="row wrap" fxLayoutAlign="start center" >
-        <mat-card class="card-picture" *ngFor="let picture of pictures">
-            <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
-              <span fxFlex="80%">{{picture.title}}</span>
-              <mat-icon fxFlex="10%">mode_edit</mat-icon>
-              <mat-icon fxFlex="10%">delete</mat-icon>
-            </mat-card-title>
-            <img mat-card-image [src]="picture.img">
-          </mat-card>
-    
-          <mat-card class="card-picture" *ngFor="let picture of pictures">
-              <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
-                <span fxFlex="80%">{{picture.title}}</span>
-                <mat-icon fxFlex="10%">mode_edit</mat-icon>
-                <mat-icon fxFlex="10%">delete</mat-icon>
-              </mat-card-title>
-              <img mat-card-image [src]="picture.img">
-            </mat-card>
-    
-            <mat-card class="card-picture" *ngFor="let picture of pictures">
-                <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
-                  <span fxFlex="80%">{{picture.title}}</span>
-                  <mat-icon fxFlex="10%">mode_edit</mat-icon>
-                  <mat-icon fxFlex="10%">delete</mat-icon>
-                </mat-card-title>
-                <img mat-card-image [src]="picture.img">
+        <div  fxLayout  fxLayout.xs="column" fxLayoutAlign="center"  fxLayoutGap.xs="0" fxLayoutGap="32px" >
+            
+            <mat-card [style.backgroundColor]="'#efe2ba'"  >
+                <mat-card-subtitle	 fxLayout.gt-xs="row" fxLayout.xs="column">
+                  <span fxFlex="100%">Gmail</span>
+                </mat-card-subtitle>
+                <mat-card-content fxLayoutAlign="center">
+                    <button  mat-raised-button color="primary" fxShrink="2" fxGrow="2" (click)="fileInput.click()">
+                        <mat-icon>library_add</mat-icon>
+                        <span>Select</span>
+                        <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;" />
+                      </button>
+                </mat-card-content>
               </mat-card>
-    </div>
-    
-    </div>
+        
+              <mat-card [style.backgroundColor]="'#efe2ba'" >
+                  <mat-card-subtitle	 fxLayout.gt-xs="row" fxLayout.xs="column">
+                    <span fxFlex="100%">Facebook</span>
+                  </mat-card-subtitle>
+                  <mat-card-content fxLayoutAlign="center">
+                      <button  mat-raised-button color="primary" fxShrink="2" fxGrow="2" (click)="fileInput.click()">
+                          <mat-icon>library_add</mat-icon>
+                          <span>Select</span>
+                          <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;" />
+                        </button>
+                  </mat-card-content>
+                </mat-card>
+        
+                <mat-card [style.backgroundColor]="'#efe2ba'"  >
+                    <mat-card-subtitle	 fxLayout.gt-xs="row" fxLayout.xs="column">
+                      <span fxFlex="100%">Instagram</span>
+                    </mat-card-subtitle>
+                    <mat-card-content fxLayoutAlign="center">
+                        <button  mat-raised-button color="primary" fxShrink="2" fxGrow="2" (click)="fileInput.click()">
+                            <mat-icon>library_add</mat-icon>
+                            <span>Select</span>
+                            <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;" />
+                          </button>
+                    </mat-card-content>
+                  </mat-card>
+                  <mat-card [style.backgroundColor]="'#efe2ba'"  >
+                    <mat-card-subtitle	 fxLayout.gt-xs="row" fxLayout.xs="column">
+                      <span fxFlex="100%">Whatsapp</span>
+                    </mat-card-subtitle>
+                    <mat-card-content fxLayoutAlign="center">
+                        <button  mat-raised-button color="primary" fxShrink="2" fxGrow="2" (click)="fileInput.click()">
+                            <mat-icon>library_add</mat-icon>
+                            <span>Select</span>
+                            <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;" />
+                          </button>
+                    </mat-card-content>
+                  </mat-card>
+
+                  <mat-card [style.backgroundColor]="'#efe2ba'"  >
+                    <mat-card-subtitle	 fxLayout.gt-xs="row" fxLayout.xs="column">
+                      <span fxFlex="100%">Outlook</span>
+                    </mat-card-subtitle>
+                    <mat-card-content fxLayoutAlign="center">
+                        <button  mat-raised-button color="primary" fxShrink="2" fxGrow="2" (click)="fileInput.click()">
+                            <mat-icon>library_add</mat-icon>
+                            <span>Select</span>
+                            <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;" />
+                          </button>
+                    </mat-card-content>
+                  </mat-card>
+
+
+
+
+        </div>
+
+  </div>
+  
+</div>
