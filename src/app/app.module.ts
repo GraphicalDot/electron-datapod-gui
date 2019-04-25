@@ -21,7 +21,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './components/nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTreeModule, MatCardMdImage, MatCardModule, MatMenuModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatTableModule, MatIconModule, MatListModule, MatTreeModule, MatFormFieldModule, MatCardModule, MatMenuModule, MatInputModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DatasourceComponent } from './components/datasource/datasource.component';
 import { BackupComponent } from './components/backup/backup.component';
@@ -76,7 +76,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatTreeModule,
     MatCardModule,
     FlexLayoutModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+
+
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]

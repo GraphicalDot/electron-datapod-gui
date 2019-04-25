@@ -1,3 +1,36 @@
-<p>
-  datasource works!
-</p>
+<div>
+
+    
+    <div  fxLayoutGap="2%" fxLayout="row wrap" fxLayoutAlign="center" fxFlexFill>
+        <h2>Welcome to Privacy centric Datapod</h2>
+    </div>
+    <div  fxLayoutGap="2%" fxLayout="row wrap" fxLayoutAlign="start center" >
+        <mat-card class="card-picture" *ngFor="let picture of pictures">
+            <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+              <span fxFlex="80%">{{picture.title}}</span>
+              <mat-icon fxFlex="10%">mode_edit</mat-icon>
+              <mat-icon fxFlex="10%">delete</mat-icon>
+            </mat-card-title>
+            <img mat-card-image [src]="picture.img">
+          </mat-card>
+    
+          <mat-card class="card-picture" *ngFor="let picture of pictures">
+              <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+                <span fxFlex="80%">{{picture.title}}</span>
+                <mat-icon fxFlex="10%">mode_edit</mat-icon>
+                <mat-icon fxFlex="10%">delete</mat-icon>
+              </mat-card-title>
+              <img mat-card-image [src]="picture.img">
+            </mat-card>
+    
+            <mat-card class="card-picture" *ngFor="let picture of pictures">
+                <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+                  <span fxFlex="80%">{{picture.title}}</span>
+                  <mat-icon fxFlex="10%">mode_edit</mat-icon>
+                  <mat-icon fxFlex="10%">delete</mat-icon>
+                </mat-card-title>
+                <img mat-card-image [src]="picture.img">
+              </mat-card>
+    </div>
+    
+    </div>

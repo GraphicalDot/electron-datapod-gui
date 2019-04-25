@@ -1,3 +1,64 @@
-<p>
-  flights works!
-</p>
+
+<div class="flex-container">
+
+
+  <div  style="margin-top: 70px" fxLayout  fxLayout.xs="column" fxLayoutAlign="center"  fxLayoutGap.xs="0" fxLayoutGap="60px" >
+        <div  fxFlex fxFlexOffset="70px"  fxFlexOffset.xs="0"><h4>Flights</h4></div>
+        <div  fxFlex fxFlexOffset="50px" fxFlex="200px" fxFlexOffset.xs="0">
+          <mat-form-field>
+            <input matInput placeholder="Search">
+          </mat-form-field>
+    
+
+        </div>
+
+  </div>
+    
+  <div  fxLayout  fxLayout.xs="column" fxLayoutAlign="center"  fxLayoutGap.xs="0" fxLayoutGap="32px" >
+      
+      <mat-card [style.backgroundColor]="'#efe2ba'"  >
+          <mat-card-subtitle	 fxLayout.gt-xs="row" fxLayout.xs="column">
+            <span fxFlex="100%">Delhi > Banglore</span>
+          </mat-card-subtitle>
+          <mat-card-content fxLayoutAlign="center">
+              20 April, 2019
+          </mat-card-content>
+        </mat-card>
+  
+        <mat-card [style.backgroundColor]="'#efe2ba'" >
+            <mat-card-subtitle	 fxLayout.gt-xs="row" fxLayout.xs="column">
+              <span fxFlex="100%">Delhi > Banglore</span>
+            </mat-card-subtitle>
+            <mat-card-content fxLayoutAlign="center">
+                20 April, 2019
+            </mat-card-content>
+          </mat-card>
+  
+          <mat-card [style.backgroundColor]="'#efe2ba'"  >
+              <mat-card-subtitle	 fxLayout.gt-xs="row" fxLayout.xs="column">
+                <span fxFlex="100%">Delhi > Banglore</span>
+              </mat-card-subtitle>
+              <mat-card-content fxLayoutAlign="center">
+                  20 April, 2019
+              </mat-card-content>
+            </mat-card>
+            <mat-card [style.backgroundColor]="'#efe2ba'"  >
+              <mat-card-subtitle	 fxLayout.gt-xs="row" fxLayout.xs="column">
+                <span fxFlex="100%">Delhi > Banglore</span>
+              </mat-card-subtitle>
+              <mat-card-content fxLayoutAlign="center">
+                  20 April, 2019
+              </mat-card-content>
+            </mat-card>
+
+  </div>
+
+
+  <div  fxLayout="row"  fxLayout.xs="column" fxLayoutAlign="center"  fxLayoutGap.xs="0" fxLayoutGap="15px" style="margin-top: 5%" >
+
+      <button mat-raised-button color="primary" fxShrink="2" fxGrow="2" >Print all Tickets</button>
+      <button mat-raised-button color="primary">Export as json</button>
+      <button mat-raised-button color="primary">Sell on Marketplace</button>
+  </div>
+  
+  </div>

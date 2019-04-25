@@ -15,8 +15,8 @@
   
 
 <div class="flex-container">
-        <mat-sidenav-container class="sidenav-container">
-            <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+        <mat-sidenav-container  style="font-family: Karla,  sans-serif;" class="sidenav-container">
+            <mat-sidenav [style.backgroundColor]="'#c5cbe3'" class="mat-elevation-z8"  #drawer class="sidenav" fixedInViewport="true"
                 [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
                 [mode]="(isHandset$ | async) ? 'over' : 'side'"
                 [opened]="!(isHandset$ | async)">
@@ -26,27 +26,33 @@
                     <mat-list-item>  
 
                             <!-- <button mat-button (click)="goToPage()"><mat-icon>mic</mat-icon><img src="...">Home</button> -->
-                            <button mat-button (click)="goToPage()"><mat-icon>mic</mat-icon>Home</button>
+                            <button mat-button (click)="goToPage()"><mat-icon>mic</mat-icon><span style="padding: 20px">Home</span></button>
 
                     </mat-list-item>
 
                     <mat-list-item>  
 
-                            <button mat-button routerLink="/datasource"><mat-icon>local_drink</mat-icon>Data Source</button>
+                            <button mat-button routerLink="/datasource"><mat-icon>local_drink</mat-icon><span style="padding: 20px">Data source</span></button>
 
                     </mat-list-item>
 
                     <mat-list-item>  
 
-                            <button mat-button routerLink="/backup"><mat-icon>backup</mat-icon>Backup</button>
+                            <button mat-button routerLink="/backup"><mat-icon>backup</mat-icon><span style="padding: 20px">Backup</span></button>
 
                     </mat-list-item>
+
+                    <mat-list-item>  
+
+                                <button mat-button routerLink="/backup"><mat-icon>backup</mat-icon><span style="padding: 20px">Plugin Marketplace</span></button>
+    
+                        </mat-list-item>
 
                     <mat-divider></mat-divider>
 
                     <mat-list-item>  
 
-                            <button mat-button [matMenuTriggerFor]="finance"><mat-icon>attach_money</mat-icon>Finance</button>
+                            <button mat-button [matMenuTriggerFor]="finance"><mat-icon>attach_money</mat-icon><span style="padding: 20px">Finance</span></button>
 
                     </mat-list-item>
 
@@ -62,7 +68,7 @@
 
                     <mat-list-item>  
 
-                            <button mat-button [matMenuTriggerFor]="travel"><mat-icon>directions_walk</mat-icon>Travel</button>
+                            <button mat-button [matMenuTriggerFor]="travel"><mat-icon>directions_walk</mat-icon><span style="padding: 20px">Travel</span></button>
     
                     </mat-list-item>
     
@@ -76,7 +82,7 @@
         
                         <mat-list-item>  
 
-                                <button mat-button [matMenuTriggerFor]="health"><mat-icon>healing</mat-icon>Health</button>
+                                <button mat-button [matMenuTriggerFor]="health"><mat-icon>healing</mat-icon><span style="padding: 20px">Health</span></button>
         
                         </mat-list-item>
         
@@ -88,7 +94,7 @@
 
                         <mat-list-item>  
 
-                                <button mat-button [matMenuTriggerFor]="ecommerce"><mat-icon>directions_walk</mat-icon>Ecommerce</button>
+                                <button mat-button [matMenuTriggerFor]="ecommerce"><mat-icon >directions_walk</mat-icon><span style="padding: 20px">Ecommerce</span></button>
         
                         </mat-list-item>
         
@@ -104,8 +110,8 @@
             </mat-sidenav>
             
         
-            <mat-sidenav-content fxLayout="row" fxLayoutAlign="start stretch" fxLayoutWrap>
-                <router-outlet class="outlet">
+            <mat-sidenav-content >
+                <router-outlet>
         
                   </router-outlet>
             </mat-sidenav-content>
