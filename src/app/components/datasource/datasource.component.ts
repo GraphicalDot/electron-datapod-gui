@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatSnackBar} from '@angular/material';
 
 @Component({
   selector: 'app-datasource',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatasourceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private snackBar: MatSnackBar) {}
 
+ 
   ngOnInit() {
   }
 
+  onGmail(event) {
+    //this.snackBar.open("Only enabled for google takeout folder")
+    var tmppath = event.target.files[0].path;
+    console.log("Gmail input has been clicked")
+    console.log(tmppath)
+
+      }
 }
